@@ -1,6 +1,6 @@
 my_ip_address = "98.148.51.154"
 aws_region_01 = "us-east-2"
-owner = "nollen"
+owner = "sharp"
 project_name = "my-project"
 crdb_instance_key_name = "nollen-cockroach-revenue-us-east-2-kp01"
 vpc_cidr = "192.168.7.0/24"
