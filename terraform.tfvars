@@ -1,8 +1,11 @@
-my_ip_address = "98.148.51.154"
-aws_region_01 = "us-east-2"
+# changed:
+my_ip_address = "24.69.84.116"
+# changed:
+aws_region_01 = "us-west-2"
 owner = "sharp"
-project_name = "my-project"
-crdb_instance_key_name = "nollen-cockroach-revenue-us-east-2-kp01"
+project_name = "trs-project"
+# changed:
+crdb_instance_key_name = "TRS-uswest2"
 vpc_cidr = "192.168.7.0/24"
 
 # -----------------------------------------
@@ -25,4 +28,5 @@ include_app = "yes"
 app_instance_type = "t3a.micro"
 
 create_admin_user = "yes"
-admin_user_name = "ron"
+# changed:
+admin_user_name = "tim"
