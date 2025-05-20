@@ -2,7 +2,7 @@
 my_ip_address = "24.69.84.116"
 # changed:
 aws_region_01 = "us-west-2"
-owner = "sharp"
+owner = "trs--"
 project_name = "trs-project"
 # changed:
 crdb_instance_key_name = "TRS-uswest2"
