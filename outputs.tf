@@ -52,8 +52,8 @@ output "public_subnet_list" {
 
 output "availability_zonessssssss" {
   description = "availability zones"
-  #value = data.aws_availability_zones.available.names
-  value = available.names
+  value = data.aws_availability_zones.available.names
+  #value = available.names
 }
 
 output "availability_zone_list" {
