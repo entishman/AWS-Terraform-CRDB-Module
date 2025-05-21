@@ -14,7 +14,8 @@ resource "aws_internet_gateway" "igw" {
 }
 
 resource "aws_subnet" "public_subnets" {
-  count              = 3
+  count              = 2
+  #trs-original: count              = 3
 
   vpc_id                  = aws_vpc.main.id
   availability_zone       = local.availability_zone_list[count.index]
