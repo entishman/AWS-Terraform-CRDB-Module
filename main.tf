@@ -49,7 +49,9 @@ locals {
   tags = merge(var.resource_tags, local.required_tags) 
   admin_username = "ec2-user"
   # create 6 subnets: 3 for public subnets, 3 for private subnets
-  subnet_list = cidrsubnets(var.vpc_cidr,3,3,3,3,3,3)
+  # vpc_cidr = 192.168.4.0/24
+  # subnet_list = cidrsubnets(var.vpc_cidr,3,3,3,3,3,3)
+  subnet_list = cidrsubnets(var.vpc_cidr,1,2,3,4,5,6)
   private_subnet_list = chunklist(local.subnet_list,3)[0]
   public_subnet_list  = chunklist(local.subnet_list,3)[1]
   availability_zone_count = 3
