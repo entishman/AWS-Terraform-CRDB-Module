@@ -95,3 +95,8 @@ output "security_group_external_access_id" {
   description = "ID of the security group allowing communication external to the VPC"
   value = module.security-group-01.security_group_id
 }
+
+output "subnet_listsssssssssss" {
+  description = "list of subnets"
+  value = local.subnet_list
+}
