@@ -35,17 +35,21 @@ output "join_string" {
 #   sensitive = true
 # }
 
-output "subnets" {
+output "subnets-1" {
   description = "Subnets"
   value = local.subnet_list[*]
 }
+output "subnets-2" {
+  description = "Subnets"
+  value = local.subnet_list[1]
+}
 
-output "private_subnet_list" {
+output "private_subnet_listsssss" {
   description = "private subnets"
   value = local.private_subnet_list
 }
 
-output "public_subnet_list" {
+output "public_subnet_listsssss" {
   description = "public subnets"
   value = local.public_subnet_list
 }
@@ -56,42 +60,42 @@ output "availability_zonessssssss" {
   #value = available.names
 }
 
-output "availability_zone_list" {
+output "availability_zone_listssss" {
   description = "availability zone list"
   value = local.availability_zone_list
 }
 
-output "network_interfaces" {
+output "network_interfacesssss" {
   description = "List of network interfaces"
   value       = aws_network_interface.crdb[*].private_ip
 }
 
-output "haproxy_ip" {
+output "haproxy_ipssssss" {
   description = "HA Proxy Private IP"
   value       = aws_network_interface.haproxy[0].private_ip
 }
 
-output "vpc_id" {
+output "vpc_idsssssss" {
   description = "ID of the VPC created by the module"
   value       = aws_vpc.main.id
 }
 
-output "route_table_public_id" {
+output "route_table_public_idssss" {
   description = "ID of the public route table"
   value = aws_route_table.public_route_table.id
 }
 
-output "route_table_private_id" {
+output "route_table_private_idsssss" {
   description = "ID of the private route table"
   value = aws_route_table.private_route_table.id
 }
 
-output "security_group_intra_node_id" {
+output "security_group_intra_node_idssss" {
   description = "ID of the security group allowing intra-node communication"
   value = module.security-group-02.security_group_id
 }
 
-output "security_group_external_access_id" {
+output "security_group_external_access_idsssss" {
   description = "ID of the security group allowing communication external to the VPC"
   value = module.security-group-01.security_group_id
 }
