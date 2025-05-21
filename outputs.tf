@@ -44,63 +44,63 @@ output "subnets-2" {
   value = local.subnet_list[1]
 }
 
-output "private_subnet_listsssss" {
+output "private_subnet_list-3" {
   description = "private subnets"
   value = local.private_subnet_list
 }
 
-output "public_subnet_listsssss" {
+output "public_subnet_list-4" {
   description = "public subnets"
   value = local.public_subnet_list
 }
 
-output "availability_zonessssssss" {
+output "availability_zones-5" {
   description = "availability zones"
   value = data.aws_availability_zones.available.names
   #value = available.names
 }
 
-output "availability_zone_listssss" {
+output "availability_zone_list-6" {
   description = "availability zone list"
   value = local.availability_zone_list
 }
 
-output "network_interfacesssss" {
+output "network_interfaces-7" {
   description = "List of network interfaces"
   value       = aws_network_interface.crdb[*].private_ip
 }
 
-output "haproxy_ipssssss" {
+output "haproxy_ip-8" {
   description = "HA Proxy Private IP"
   value       = aws_network_interface.haproxy[0].private_ip
 }
 
-output "vpc_idsssssss" {
+output "vpc_id-9" {
   description = "ID of the VPC created by the module"
   value       = aws_vpc.main.id
 }
 
-output "route_table_public_idssss" {
+output "route_table_public_id-10" {
   description = "ID of the public route table"
   value = aws_route_table.public_route_table.id
 }
 
-output "route_table_private_idsssss" {
+output "route_table_private_id-11" {
   description = "ID of the private route table"
   value = aws_route_table.private_route_table.id
 }
 
-output "security_group_intra_node_idssss" {
+output "security_group_intra_node_id-12" {
   description = "ID of the security group allowing intra-node communication"
   value = module.security-group-02.security_group_id
 }
 
-output "security_group_external_access_idsssss" {
+output "security_group_external_access_id-13" {
   description = "ID of the security group allowing communication external to the VPC"
   value = module.security-group-01.security_group_id
 }
 
-output "subnet_listsssssssssss" {
+output "subnet_list-14" {
   description = "list of subnets"
   value = local.subnet_list
 }
