@@ -56,7 +56,10 @@ locals {
   availability_zone_list = slice(data.aws_availability_zones.available.names,0,local.availability_zone_count)
   
 }
-
+output "subnet_list............................." {
+  description = "list of subnets"
+  value = local.subnet_list
+}
 
 locals {
 #  depends_on = [aws_network_interface.crdb]
