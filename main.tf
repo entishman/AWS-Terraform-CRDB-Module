@@ -56,7 +56,7 @@ locals {
   availability_zone_list = slice(data.aws_availability_zones.available.names,0,local.availability_zone_count)
   
 }
-output "subnet_list" {
+output "subnet_listsssssssssss" {
   description = "list of subnets"
   value = local.subnet_list
 }
