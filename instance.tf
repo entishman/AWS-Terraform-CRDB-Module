@@ -12,7 +12,7 @@ resource "aws_instance" "crdb" {
   }
   key_name      = var.crdb_instance_key_name
   root_block_device {
-    delete_on_termination = true
+    delete_on_termination = true 
     encrypted = true
     volume_type = var.crdb_root_volume_type
     volume_size = var.crdb_root_volume_size
